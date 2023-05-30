@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    
+    <div class="hero">
+      <nav class="navbar">
+        <div class="nav-container">
+  
+        <div class="logo">
+          <img src="/images/ckb.jpg" width="50px" />
+          <p>
+            Igrreja CKB
+          </p>
+        </div>
+  
+        <div> <!-- hamburguer menu -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21">
+            <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
+              <path id="Path_1" data-name="Path 1" d="M4.5,18h27" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+              <path id="Path_2" data-name="Path 2" d="M4.5,9h27" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+              <path id="Path_3" data-name="Path 3" d="M4.5,27h27" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            </g>
+          </svg>        
+        </div>
+      </div>
+      </nav>
+
+      <div class="hero-container">
+          <h1>
+            Ajude usuários de Dota 3 com doações que cabem no seu bolso
+          </h1>
+
+          <div class="burron-row">
+            
+            <button id="DonateButton" class="donate" >
+              Faça uma doação
+            </button>
+
+            <script>/*  trocador de botão */
+              var button = document.getElementById("DonateButton");
+              var isClicked = false;
+              button.addEventListener("click", function() {
+                if (isClicked) {
+                  button.innerHTML = "Faça uma doação";
+                  button.style.backgroundColor = "#e98431";
+                  button.style.padding = "20px 50px"
+                }
+                else {
+                  button.innerHTML = "Você tomou VAC ban...";
+                  button.style.backgroundColor = "#e93131";
+                  button.style.padding = "30px 60px"
+                }
+
+                isClicked = !isClicked;
+              });
+            </script>
+
+          </div>
+        
+      </div>
+    </div>
+  </section>
+</body>
+</html>
